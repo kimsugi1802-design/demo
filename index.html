@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio của Mai Phương - Tùy Chọn 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">MaiPhương.dev</div>
+        <nav class="nav-links">
+            <a href="#about">Giới thiệu</a>
+            <a href="#stats">Thành tựu</a>
+            <a href="#faq">Hỏi đáp</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle">🌙 Sáng/Tối</button>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <h1>Portfolio Thiết Kế Từ Đầu</h1>
+            <p>Trang web cá nhân chuẩn W3C, Responsive mượt mà và tích hợp 4 tính năng bổ sung đỉnh chóp!</p>
+            <a href="#contact" class="btn">Kết Nối Ngay</a>
+        </section>
+
+        <!-- Tính năng 4: Animated Stats Counter -->
+        <section class="container" id="stats">
+            <h2 class="section-title">Thành Tựu Dự Án</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="100">0</div>
+                    <p>Chuẩn W3C Validator</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="4">0</div>
+                    <p>Tính Năng Bổ Sung</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="100">0</div>
+                    <p>Responsive Devices</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tính năng 2: Interactive FAQ Accordion -->
+        <section class="container" id="faq">
+            <h2 class="section-title">Câu Hỏi Thường Gặp (FAQ)</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">Trang web này có tự code hoàn toàn không? <span>+</span></button>
+                    <div class="faq-answer">Chuẩn 100% tự code từ đầu (Scratch) bằng HTML5, CSS3 và JavaScript thuần túy không qua thư viện bên thứ ba!</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Có tối ưu cho thiết bị di động không? <span>+</span></button>
+                    <div class="faq-answer">Rất mượt mà trên mọi màn hình nhờ thiết kế responsive sử dụng Flexbox và Media Queries.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Làm sao để đổi giao diện sáng tối? <span>+</span></button>
+                    <div class="faq-answer">Chỉ cần bấm nút "Sáng/Tối" ở góc trên cùng bên phải là giao diện tự động đổi màu cực nghệ.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tính năng 3: Live Contact Form with Validation -->
+        <section class="container" id="contact">
+            <h2 class="section-title">Liên Hệ Với Tôi</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" required placeholder="Nhập tên của mày vào đây...">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Nội dung</label>
+                    <textarea id="message" rows="4" required placeholder="Viết gì đi chứ..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Gửi Tin Nhắn</button>
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portfolio cá nhân - Mai Phương. Thiết kế chuẩn bài tập Tùy chọn 1.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
